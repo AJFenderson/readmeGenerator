@@ -12,7 +12,12 @@ const api = {
       .get(`https://api.github.com/users/${username}`, {
         headers: {"Authorization": `token ${process.env.GH_TOKEN}`}
       })
-      .then(response => console.log(response.data)) 
+      .then(function(response){
+          console.log(response.data)
+          genMd(response)
+      })
+    //   .then(response => console.log(response.data)
+       
       .catch(error => console.log(error))
     }
   };
@@ -67,6 +72,7 @@ name:"username"},
 ]) .then(function(response){
 let username = response.username
 api.getUser(username, response)
+genMd(response)
 })
 
 }
