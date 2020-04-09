@@ -1,5 +1,5 @@
-// require('dotenv').config()
-// const axios = require("axios");
+require('dotenv').config()
+const axios = require("axios");
 
 // const api = {
 //   getUser(username) {
@@ -14,7 +14,7 @@
 
 // api.getUser("acd37");
 
-// module.exports = api;
+module.exports = api;
 
 
 // {headers: { Authorization: `token ${process.argv}`}}
