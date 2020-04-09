@@ -1,8 +1,15 @@
+const fs = require("fs")
+
+
 function generateMarkdown(data) {
-  return `
+  const readmeInfo = `
 # ${data.title}
 
 `;
+// what file your writing to, what info were writing to file, error function
+fs.writeFile("genReadMe.md",readmeInfo, function(error){if (error) {console.log(error)}
+ console.log ("success!")
+})
 }
 
 module.exports = generateMarkdown;
