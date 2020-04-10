@@ -52,9 +52,6 @@ name:"title"},
 message:"Describe your application:",
 name:"description"},
 
-{type: "input",
-message:"List all of the contents used in your application:",
-name:"tableOfContents"},
 
 {type: "input",
 message:"Describe the installation process  to use your app:",
@@ -78,12 +75,3 @@ api.getUser(username, response)
 
 init();
 
-// * Title
-//   * Description
-//   * Table of Contents
-//   * Installation
-//   * Usage
-//   * License
-//   * Contributing
-//   * Tests
-//   * Questions

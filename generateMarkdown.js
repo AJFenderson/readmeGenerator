@@ -6,15 +6,26 @@ function generateMarkdown(data, obj) {
 <h1> # ${obj.title} <h1>
 <img src="${data.avatar_url}" alt="Profile Picture" align="right"> 
 
+<h2> Table of Contents: </h2>
+    <ul>
+    <li> Description </li>
+    <li> User story </li>
+    <li> Installation </li>
+    <li> Technology Stack </li>
+    <li> Contributors </li>
+    <li> Test </li>
+    <li> License</li>
+    </ul>
+
 
 <h2> Description: <h2>
 <ul>
     <li> ${obj.description} </li>
     </ul>
 
-<h2> Technology Used: <h2>
+    <h2> User story: <h2>
 <ul>
-<li>${obj.tableOfContents}</li>
+<li>${obj.usage} </li>
 </ul>
 
 <h2> Installation: <h2>
@@ -22,13 +33,10 @@ function generateMarkdown(data, obj) {
 <li>${obj.installation} </li>
 </ul>
 
-<h2> User story: <h2>
+<h2> Technology Used: <h2>
 <ul>
-<li>${obj.usage} </li>
+<li>${obj.tableOfContents}</li>
 </ul>
-
-<h2>License: <h2>
-<img src="https://img.shields.io/badge/License-${obj.license}-green" >
 
 <h2> Contributors: <h2>
 <ul>
@@ -41,6 +49,11 @@ function generateMarkdown(data, obj) {
 <li> e-mail: ${obj.email} </li>
 <li> LinkedIn: ${obj.linked} </li>
 </ul>
+
+
+<h2>License: <h2>
+<img src="https://img.shields.io/badge/License-${obj.license}-green" >
+
 
 <h2> Tests: <h2>
 <ul>
@@ -61,12 +74,4 @@ ${data.questions}
 
 module.exports = generateMarkdown;
 
-// * Title
-//   * Description
-//   * Table of Contents
-//   * Installation
-//   * Usage
-//   * License
-//   * Contributing
-//   * Tests
-//   * Questions
+
