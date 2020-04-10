@@ -4,6 +4,8 @@ fs = require("fs");
 function generateMarkdown(data, obj) {
   const readmeInfo = `
 <h1> # ${obj.title} <h1>
+<img src="${data.avatar_url}" alt="Profile Picture" align="right"> 
+
 
 <h2> Description: <h2>
 <ul>
