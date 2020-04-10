@@ -46,6 +46,8 @@
 node index.js </li>
 </ol>
 
+![](Gif.gif)
+
 <h2> Technology Stack: </h2>
     <ul>
     <li> Node.js </li> 
